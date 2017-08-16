@@ -1,7 +1,5 @@
 console.log('Loaded!');
-var element = document.getElementById(main-text
+var element = document.getElementById('main-text'
 );
 
-element.inneHTML = (
-    'I\'m Khadija'
-);
+element.inneHTML = 'I\'m Khadija';
