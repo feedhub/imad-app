@@ -5,5 +5,5 @@ element.innerHTML = 'I\'m Khadija';
 //move the image
 var img = document.getElementById('madi');
 img.onclick = function () {
-    img.style.margintop = '100px';
+    img.style.marginTop = '100px';
 };
