@@ -1,11 +1,10 @@
 console.log('Loaded!');
-var element = document.getElementById('main-text'
-);
+var element = document.getElementById('main-text');
 
 element.innerHTML = 'I\'m Khadija';
 
 //move the image
 var img = document.getElementById('modi');
-img.onclick = function (){
+img.onclick = function () {
     img.style.marginleft = '200px';
 };
