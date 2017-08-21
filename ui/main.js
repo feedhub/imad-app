@@ -11,5 +11,5 @@ button.onclick = function(){
   //render the span value
   counter = counter + 1;
   var span = document.getElementById('count');
-  span.counter.toString();
+  span.innerHTML = counter.toString();
 };
