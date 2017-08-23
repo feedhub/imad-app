@@ -9,6 +9,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/test_db',function(req,res){
+   //make a select request
+   //response with the results
+});
+
 var counter = 0;
 app.get('/counter',function(req,res){
    counter = counter + 1;
