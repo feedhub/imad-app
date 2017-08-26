@@ -38,39 +38,6 @@ app.get('/counter',function(req,res){
    res.send(counter.toString());
 });
 
-var articles = {
-    'article-one' : {
-      title: 'Article one',
-      heading:'Article One',
-      date:'Aug 13,2017',
-      content:`<p>
-                    this is the content of my firt article.this is the content of my firt article.this is the content of my firt article.this is the content of my first article.this is the content of my firt article.this is the content of my firt article.
-                </p>
-                <p>
-                    this is the content of my firt article.this is the content of my firt article.this is the content of my firt article.this is the content of my first article.this is the content of my firt article.this is the content of my firt article.
-                </p>
-                <p>
-                    this is the content of my firt article.this is the content of my firt article.this is the content of my firt article.this is the content of my first article.this is the content of my firt article.this is the content of my firt article.
-                </p>`
-    },
-    'article-two' : {
-        title: 'Article Two',
-         heading:'Article Two',
-         date:'Aug 14,2017',
-         content: `<p>
-                        this is the content of my second article.
-                   </p>`
-    },
-    'article-three' : {
-          title: 'Article Three',
-          heading:'Article Three',
-          date:'Aug 15,2017',
-          content:`<p>
-                        this is the content of my third article.
-                    </p>`
-    },
-};
-
 function createTemplate(data) {
     var title = data.title;
     var date = data.date;
