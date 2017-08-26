@@ -78,7 +78,7 @@ function createTemplate(data) {
 app.get('/article/:articleName', function (req, res) {
   //artcleName == article-one
   //articles[articleName] == {} content object for article-one
-  pool.query("SELECT * from article where title='" + req.params.articleName + "'", function(err,result){
+  pool.query("SELECT * from article where title=$1", req.params.articleName , function(err,result){
       if (err){
           res.status(500).send(err.toString());
       }else {
