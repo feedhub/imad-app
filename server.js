@@ -10,6 +10,9 @@ var config = {
     password: process.env.DB_PASSWORD,
 };
 
+app.get('/hash/:input',function(req,res){
+   var hashed  
+});
 
 var app = express();
 app.use(morgan('combined'));
